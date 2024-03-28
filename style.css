@@ -1,21 +1,24 @@
 body {
-  font-family: "DIN Pro", Calibri, sans-serif;
-  color: #001017;
+	font-family: "DIN Pro", Calibri, sans-serif;
+	color: #001017;
 }
+
 audio {
-  display: none;
+	display: none;
 }
+
 a:link {
-  color: #001017;
-  background-color: transparent;
-  text-decoration: none;
+	color: #001017;
+	background-color: transparent;
+	text-decoration: none;
 }
+
 h2 {
-  display: block;
-  font-size: 1.5em;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-block-start: 0.2em;
-  margin-block-end: 0.2em;
-  color: #003044;
+	display: block;
+	font-size: 1.5em;
+	margin-block-start: 0.83em;
+	margin-block-end: 0.83em;
+	margin-block-start: 0.2em;
+	margin-block-end: 0.2em;
+	color: #003044;
 }
