@@ -24,7 +24,11 @@ h2 {
 }
 
 input {
-	font-family: "SUSE", Calibri, sans-serif;
+	font-family: font-family: inherit;
+}
+
+iframe {
+	font-family: font-family: inherit;
 }
 
 /* Style the tab */
