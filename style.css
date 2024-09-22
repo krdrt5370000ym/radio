@@ -23,6 +23,14 @@ h2 {
 	color: #003044;
 }
 
+button {
+	font-family: inherit;
+}
+
+select {
+	font-family; inherit;
+}
+
 /* Style the tab */
 .tab {
   overflow: hidden;
