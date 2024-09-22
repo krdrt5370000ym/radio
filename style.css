@@ -24,11 +24,7 @@ h2 {
 	color: #003044;
 }
 
-input, button, select {
-	font-family: inherit;
-}
-
-iframe {
+input, button, select, audio, iframe {
 	font-family: inherit;
 }
 
