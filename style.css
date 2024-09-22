@@ -31,6 +31,10 @@ select {
 	font-family: "SUSE", Calibri, sans-serif;
 }
 
+input {
+	font-family: "SUSE", Calibri, sans-serif;
+}
+
 /* Style the tab */
 .tab {
   overflow: hidden;
