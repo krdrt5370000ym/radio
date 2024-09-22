@@ -23,6 +23,10 @@ h2 {
 	color: #003044;
 }
 
+button {
+	font-family: "SUSE", Calibri, sans-serif;
+}
+
 input {
 	font-family: "SUSE", Calibri, sans-serif;
 }
