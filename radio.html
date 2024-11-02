@@ -75,7 +75,9 @@
   <button class="btn" onclick="filterSelection('polska')"> Polska</button>
   <button class="btn" onclick="filterSelection('region')"> Region</button>
   <button class="btn" onclick="filterSelection('zagranicy')"> Zagranicy</button>
+  <button class="btn" onclick="filterSelection('internet')"> Internet</button>
   <button class="btn" onclick="filterSelection('moje-radio')"> Moje radio</button>
+  <button class="btn" onclick="filterSelection('muzyka')"> Muzyka</button>
 </div>
 
 <ul id="myUL">
@@ -83,174 +85,237 @@
    <li class="filterDiv ulubione polska"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_fm&quot;></audio>">RMF FM</a></li>
    <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_24&quot;></audio>">RMF 24</a></li>
    <li class="filterDiv ulubione polska"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx&quot;></audio>">RMF MAXX Polska</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_byd&quot;></audio>">RMF MAXX Bydgoszcz</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_cie&quot;></audio>">RMF MAXX Mazowsze</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_cze&quot;></audio>">RMF MAXX Częstochowa</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_gda&quot;></audio>">RMF MAXX Trójmiasto</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_ino&quot;></audio>">RMF MAXX Inowrocław</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_kie&quot;></audio>">RMF MAXX Świętokrzyskie</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_knn&quot;></audio>">RMF MAXX Konin</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_kra&quot;></audio>">RMF MAXX Kraków</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_ksn&quot;></audio>">RMF MAXX Krosno</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_lom&quot;></audio>">RMF MAXX Podlasie</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_nsa&quot;></audio>">RMF MAXX Nowy Sącz</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_ole&quot;></audio>">RMF MAXX Oleśnica</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_opo&quot;></audio>">RMF MAXX Opole</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_pil&quot;></audio>">RMF MAXX Piła</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_poz&quot;></audio>">RMF MAXX Poznań</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_slk&quot;></audio>">RMF MAXX Śląsk</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_slu&quot;></audio>">RMF MAXX Pomorze</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_szc&quot;></audio>">RMF MAXX Szczecin</a></li>
-   <li class="filterDiv ulubione polska"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_tmz&quot;></audio>">RMF MAXX Tomaszów Maz.</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_wal&quot;></audio>">RMF MAXX Dolny Śląsk</a></li>
-   <li class="filterDiv ulubione polska"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_waw&quot;></audio>">RMF MAXX Warszawa</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_wlc&quot;></audio>">RMF MAXX Włocławek</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_zgr&quot;></audio>">RMF MAXX Lubuskie</a></li>
-   <li class="filterDiv ulubione polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2980-1.aac&quot;></audio>">ESKA Hity na Czasie</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2010-1.aac&quot;></audio>">ESKA Bełchatów</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2300-1.aac&quot;></audio>">ESKA Beskidy</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2020-1.aac&quot;></audio>">ESKA Białystok</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2520-1.aac&quot;></audio>">ESKA Braniewo</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2030-1.aac&quot;></audio>">ESKA Bydgoszcz</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2220-1.aac&quot;></audio>">ESKA Chorzów</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2430-1.aac&quot;></audio>">ESKA Elbląg</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2040-1.aac&quot;></audio>">ESKA Gorzów Wielkopolski</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2450-1.aac&quot;></audio>">ESKA Grudziądz</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2440-1.aac&quot;></audio>">ESKA Iława</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2480-1.aac&quot;></audio>">ESKA Jelenia Góra</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2200-1.aac&quot;></audio>">ESKA Kalisz</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2220-1.aac&quot;></audio>">ESKA Katowice</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2050-1.aac&quot;></audio>">ESKA Kielce</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2270-1.aac&quot;></audio>">ESKA Koszalin</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2070-1.aac&quot;></audio>">ESKA Kraków</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2360-1.aac&quot;></audio>">ESKA Kraśnik</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2080-1.aac&quot;></audio>">ESKA Leszno</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2130-1.aac&quot;></audio>">ESKA Lublin</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2460-1.aac&quot;></audio>">ESKA Łomża</a></li>
-   <li class="filterDiv ulubione polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2100-1.aac&quot;></audio>">ESKA Łódź</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2330-1.aac&quot;></audio>">ESKA Nowy Sącz</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2110-1.aac&quot;></audio>">ESKA Olsztyn</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2120-1.aac&quot;></audio>">ESKA Opole</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2200-1.aac&quot;></audio>">ESKA Ostrów</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2500-1.aac&quot;></audio>">ESKA Ostrzeszów</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2090-1.aac&quot;></audio>">ESKA Piła</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2250-1.aac&quot;></audio>">ESKA Płock</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2570-1.aac&quot;></audio>">ESKA Południe</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2140-1.aac&quot;></audio>">ESKA Poznań</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2320-1.aac&quot;></audio>">ESKA Przemyśl</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2210-1.aac&quot;></audio>">ESKA Radom</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2240-1.aac&quot;></audio>">ESKA Rzeszów</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2060-1.aac&quot;></audio>">ESKA Siedlce</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2220-1.aac&quot;></audio>">ESKA Sosnowiec</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2400-1.aac&quot;></audio>">ESKA Starachowice</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2260-1.aac&quot;></audio>">ESKA Szczecin</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2310-1.aac&quot;></audio>">ESKA Szczecinek</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2220-1.aac&quot;></audio>">ESKA Śląsk</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2160-1.aac&quot;></audio>">ESKA Tarnów</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2150-1.aac&quot;></audio>">ESKA Toruń</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2170-1.aac&quot;></audio>">ESKA Trójmiasto</a></li>
-   <li class="filterDiv ulubione polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2380-1.aac&quot;></audio>">ESKA Warszawa</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2180-1.aac&quot;></audio>">ESKA Wrocław</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2230-1.aac&quot;></audio>">ESKA Zamość</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2190-1.aac&quot;></audio>">ESKA Zielona Góra</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2420-1.aac&quot;></audio>">ESKA Żary</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/1380-1.aac&quot;></audio>">ESKA2 Warszawa</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/1390-1.aac&quot;></audio>">ESKA2 Biała Podlaska</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/1480-1.aac&quot;></audio>">ESKA2 Jelenia Góra</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/1050-1.aac&quot;></audio>">ESKA2 Kielce</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/1530-1.aac&quot;></audio>">ESKA2 Konin</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/1070-1.aac&quot;></audio>">ESKA2 Kraków</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/1100-1.aac&quot;></audio>">ESKA2 Łódź</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/1290-1.aac&quot;></audio>">ESKA2 Nowy Sącz</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/1120-1.aac&quot;></audio>">ESKA2 Opole</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/1240-1.aac&quot;></audio>">ESKA2 Rzeszów</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/1370-1.aac&quot;></audio>">ESKA2 Stalowa Wola</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/1260-1.aac&quot;></audio>">ESKA2 Szczecin</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/1150-1.aac&quot;></audio>">ESKA2 Toruń</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/1170-1.aac&quot;></audio>">ESKA2 Trójmiasto</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/1510-1.aac&quot;></audio>">ESKA2 Trzebnica</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/1180-1.aac&quot;></audio>">ESKA2 Wrocław</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/5980-1.aac&quot;></audio>">Eska ROCK Online</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/5380-1.aac&quot;></audio>">Eska ROCK Warszawa</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_byd&quot;></audio>">RMF MAXX Bydgoszcz</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_cie&quot;></audio>">RMF MAXX Mazowsze</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_cze&quot;></audio>">RMF MAXX Częstochowa</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_gda&quot;></audio>">RMF MAXX Trójmiasto</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_ino&quot;></audio>">RMF MAXX Inowrocław</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_kie&quot;></audio>">RMF MAXX Świętokrzyskie</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_knn&quot;></audio>">RMF MAXX Konin</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_kra&quot;></audio>">RMF MAXX Kraków</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_ksn&quot;></audio>">RMF MAXX Krosno</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_lom&quot;></audio>">RMF MAXX Podlasie</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_nsa&quot;></audio>">RMF MAXX Nowy Sącz</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_ole&quot;></audio>">RMF MAXX Oleśnica</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_opo&quot;></audio>">RMF MAXX Opole</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_pil&quot;></audio>">RMF MAXX Piła</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_poz&quot;></audio>">RMF MAXX Poznań</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_slk&quot;></audio>">RMF MAXX Śląsk</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_slu&quot;></audio>">RMF MAXX Pomorze</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_szc&quot;></audio>">RMF MAXX Szczecin</a></li>
+   <li class="filterDiv ulubione region"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_tmz&quot;></audio>">RMF MAXX Tomaszów Maz.</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_wal&quot;></audio>">RMF MAXX Dolny Śląsk</a></li>
+   <li class="filterDiv ulubione region"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_waw&quot;></audio>">RMF MAXX Warszawa</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_wlc&quot;></audio>">RMF MAXX Włocławek</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_maxxx_zgr&quot;></audio>">RMF MAXX Lubuskie</a></li>
+   <li class="filterDiv ulubione polska internet"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2980-1.aac&quot;></audio>">ESKA Hity na Czasie</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2010-1.aac&quot;></audio>">ESKA Bełchatów</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2300-1.aac&quot;></audio>">ESKA Beskidy</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2020-1.aac&quot;></audio>">ESKA Białystok</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2520-1.aac&quot;></audio>">ESKA Braniewo</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2030-1.aac&quot;></audio>">ESKA Bydgoszcz</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2220-1.aac&quot;></audio>">ESKA Chorzów</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2430-1.aac&quot;></audio>">ESKA Elbląg</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2040-1.aac&quot;></audio>">ESKA Gorzów Wielkopolski</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2450-1.aac&quot;></audio>">ESKA Grudziądz</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2440-1.aac&quot;></audio>">ESKA Iława</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2480-1.aac&quot;></audio>">ESKA Jelenia Góra</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2200-1.aac&quot;></audio>">ESKA Kalisz</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2220-1.aac&quot;></audio>">ESKA Katowice</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2050-1.aac&quot;></audio>">ESKA Kielce</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2270-1.aac&quot;></audio>">ESKA Koszalin</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2070-1.aac&quot;></audio>">ESKA Kraków</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2360-1.aac&quot;></audio>">ESKA Kraśnik</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2080-1.aac&quot;></audio>">ESKA Leszno</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2130-1.aac&quot;></audio>">ESKA Lublin</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2460-1.aac&quot;></audio>">ESKA Łomża</a></li>
+   <li class="filterDiv ulubione region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2100-1.aac&quot;></audio>">ESKA Łódź</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2330-1.aac&quot;></audio>">ESKA Nowy Sącz</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2110-1.aac&quot;></audio>">ESKA Olsztyn</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2120-1.aac&quot;></audio>">ESKA Opole</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2200-1.aac&quot;></audio>">ESKA Ostrów</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2500-1.aac&quot;></audio>">ESKA Ostrzeszów</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2090-1.aac&quot;></audio>">ESKA Piła</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2250-1.aac&quot;></audio>">ESKA Płock</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2570-1.aac&quot;></audio>">ESKA Południe</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2140-1.aac&quot;></audio>">ESKA Poznań</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2320-1.aac&quot;></audio>">ESKA Przemyśl</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2210-1.aac&quot;></audio>">ESKA Radom</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2240-1.aac&quot;></audio>">ESKA Rzeszów</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2060-1.aac&quot;></audio>">ESKA Siedlce</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2220-1.aac&quot;></audio>">ESKA Sosnowiec</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2400-1.aac&quot;></audio>">ESKA Starachowice</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2260-1.aac&quot;></audio>">ESKA Szczecin</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2310-1.aac&quot;></audio>">ESKA Szczecinek</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2220-1.aac&quot;></audio>">ESKA Śląsk</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2160-1.aac&quot;></audio>">ESKA Tarnów</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2150-1.aac&quot;></audio>">ESKA Toruń</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2170-1.aac&quot;></audio>">ESKA Trójmiasto</a></li>
+   <li class="filterDiv ulubione region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2380-1.aac&quot;></audio>">ESKA Warszawa</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2180-1.aac&quot;></audio>">ESKA Wrocław</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2230-1.aac&quot;></audio>">ESKA Zamość</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2190-1.aac&quot;></audio>">ESKA Zielona Góra</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/2420-1.aac&quot;></audio>">ESKA Żary</a></li>
+   <li class="filterDiv polska region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/1380-1.aac&quot;></audio>">ESKA2 Warszawa</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/1390-1.aac&quot;></audio>">ESKA2 Biała Podlaska</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/1480-1.aac&quot;></audio>">ESKA2 Jelenia Góra</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/1050-1.aac&quot;></audio>">ESKA2 Kielce</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/1530-1.aac&quot;></audio>">ESKA2 Konin</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/1070-1.aac&quot;></audio>">ESKA2 Kraków</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/1100-1.aac&quot;></audio>">ESKA2 Łódź</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/1290-1.aac&quot;></audio>">ESKA2 Nowy Sącz</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/1120-1.aac&quot;></audio>">ESKA2 Opole</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/1240-1.aac&quot;></audio>">ESKA2 Rzeszów</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/1370-1.aac&quot;></audio>">ESKA2 Stalowa Wola</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/1260-1.aac&quot;></audio>">ESKA2 Szczecin</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/1150-1.aac&quot;></audio>">ESKA2 Toruń</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/1170-1.aac&quot;></audio>">ESKA2 Trójmiasto</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/1510-1.aac&quot;></audio>">ESKA2 Trzebnica</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/1180-1.aac&quot;></audio>">ESKA2 Wrocław</a></li>
+   <li class="filterDiv polska internet"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/5980-1.aac&quot;></audio>">Eska ROCK Online</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/5380-1.aac&quot;></audio>">Eska ROCK Warszawa</a></li>
    <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/5990-1.aac&quot;></audio>">Eska ROCK</a></li>
    <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://playerservices.streamtheworld.com/api/livestream-redirect/ANTYRADIO.mp3?dist=gra_www&quot;&quot;></audio>">Antyradio</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://an02.cdn.eurozet.pl/ant-kat.mp3&quot;></audio>">Antyradio Katowice</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://an02.cdn.eurozet.pl/ant-kat.mp3&quot;></audio>">Antyradio Katowice</a></li>
    <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_ROCK.mp3?dist=gra_www&quot;&quot;></audio>">Rock Radio Polska</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://pl-play.adtonos.com/8101/rock-radio-krakw&quot;></audio>">Rock Radio Kraków</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://pl-play.adtonos.com/8500/rock-radio-opole&quot;></audio>">Rock Radio Opole</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://pl-play.adtonos.com/8101/rock-radio-pozna&quot;></audio>">Rock Radio Poznań</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://pl-play.adtonos.com/8101/rock-radio-warszawa&quot;></audio>">Rock Radio Warszawa</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://radiostream.pl/tuba9000-1.mp3&quot;></audio>">Rock Radio Kraków</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://radiostream.pl/tuba9002-1.mp3&quot;></audio>">Rock Radio Opole</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://radiostream.pl/tuba9004-1.mp3&quot;></audio>">Rock Radio Poznań</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://radiostream.pl/tuba9006-1.mp3&quot;></audio>">Rock Radio Warszawa</a></li>
    <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_TOKFM.mp3?dist=gra_www&quot;&quot;></audio>">Radio TOK FM</a></li>
-   <li class="filterDiv ulubione polska"><a href="data:text/html,<audio controls><source src=&quot;https://playerservices.streamtheworld.com/api/livestream-redirect/MELORADIO.mp3?dist=gra_www&quot;></audio>">Meloradio Warszawa</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-bls.mp3&quot;></audio>">Meloradio Bielsko-Biała</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-dzr.mp3&quot;></audio>">Meloradio Dzierżoniów</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-gzc.mp3&quot;></audio>">Meloradio Giżycko</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-ilw.mp3&quot;></audio>">Meloradio Iława</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-inw.mp3&quot;></audio>">Meloradio Inowrocław</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-ktw.mp3&quot;></audio>">Meloradio Katowice</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-klc.mp3&quot;></audio>">Meloradio Kielce</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-opl.mp3&quot;></audio>">Meloradio Kluczbork</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-knn.mp3&quot;></audio>">Meloradio Konin</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-krk.mp3&quot;></audio>">Meloradio Kraków</a></li>
-   <li class="filterDiv ulubione polska"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-ldz.mp3&quot;></audio>">Meloradio Łódź</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-ost.mp3&quot;></audio>">Meloradio Mazury</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-ost.mp3&quot;></audio>">Meloradio Morąg</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-mrg.mp3&quot;></audio>">Meloradio Mrągowo</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-ols.mp3&quot;></audio>">Meloradio Olsztyn</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-ost.mp3&quot;></audio>">Meloradio Olsztynek</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-opl.mp3&quot;></audio>">Meloradio Opole</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-ost.mp3&quot;></audio>">Meloradio Ostróda</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-poz.mp3&quot;></audio>">Meloradio Poznań</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-slp.mp3&quot;></audio>">Meloradio Słupca</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-trn.mp3&quot;></audio>">Meloradio Toruń</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-wro.mp3&quot;></audio>">Meloradio Wrocław</a></li>
-   <li class="filterDiv ulubione polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3980-1.aac&quot;></audio>">VOX w Rytmie Hitów</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Biała Podlaska</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Białystok</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Bielsko-Biała</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Bydgoszcz</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Częstochowa</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Elbląg</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Gdańsk</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Gdynia</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3040-1.aac&quot;></audio>">VOX Gorzów Wielkopolski</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Grudziądz</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Jelenia Góra</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Kalisz</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Katowice</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Kielce</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Koszalin</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Konin</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Kraków</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Krosno</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Legnica</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Leszno</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Lublin</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Łomża</a></li>
-   <li class="filterDiv ulubione polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Łódź</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Nowy Sącz</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Olsztyn</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Opole</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Ostrołęka</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Piotrków Trybunalski</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Płock</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3140-1.aac&quot;></audio>">VOX Poznań</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Przemyśl</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3210-1.aac&quot;></audio>">VOX Radom</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Rzeszów</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Siedlce</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Suwałki</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Szczecin</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Tarnobrzeg</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Tarnów</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Toruń</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Tychy</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Wałbrzych</a></li>
-   <li class="filterDiv ulubione polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Warszawa</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Włocławek</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Wrocław</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Zamość</a></li>
-   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Zielona Góra</a></li>
+   <li class="filterDiv ulubione polska"><a href="data:text/html,<audio controls><source src=&quot;https://playerservices.streamtheworld.com/api/livestream-redirect/MELORADIO.mp3?dist=gra_www&quot;></audio>">Meloradio Polska</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-bls.mp3&quot;></audio>">Meloradio Bielsko-Biała</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-dzr.mp3&quot;></audio>">Meloradio Dzierżoniów</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-gzc.mp3&quot;></audio>">Meloradio Giżycko</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-ilw.mp3&quot;></audio>">Meloradio Iława</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-inw.mp3&quot;></audio>">Meloradio Inowrocław</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-ktw.mp3&quot;></audio>">Meloradio Katowice</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-klc.mp3&quot;></audio>">Meloradio Kielce</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-opl.mp3&quot;></audio>">Meloradio Kluczbork</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-knn.mp3&quot;></audio>">Meloradio Konin</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-krk.mp3&quot;></audio>">Meloradio Kraków</a></li>
+   <li class="filterDiv ulubione region"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-ldz.mp3&quot;></audio>">Meloradio Łódź</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-ost.mp3&quot;></audio>">Meloradio Mazury</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-ost.mp3&quot;></audio>">Meloradio Morąg</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-mrg.mp3&quot;></audio>">Meloradio Mrągowo</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-ols.mp3&quot;></audio>">Meloradio Olsztyn</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-ost.mp3&quot;></audio>">Meloradio Olsztynek</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-opl.mp3&quot;></audio>">Meloradio Opole</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-ost.mp3&quot;></audio>">Meloradio Ostróda</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-poz.mp3&quot;></audio>">Meloradio Poznań</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-slp.mp3&quot;></audio>">Meloradio Słupca</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-trn.mp3&quot;></audio>">Meloradio Toruń</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://n-11-25.dcs.redcdn.pl/sc/o2/Eurozet/live/meloradio.livx&quot;></audio>">Meloradio Warszawa</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-wro.mp3&quot;></audio>">Meloradio Wrocław</a></li>
+   <li class="filterDiv polska region"><a href="data:text/html,<audio controls><source src=&quot;https://playerservices.streamtheworld.com/api/livestream-redirect/CHILLI.mp3?dist=gra_www&quot;></audio>">Chillizet online Warszawa/a></li>
+   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_ZLOTE_PRZEBOJE.mp3?dist=gra_www&quot;></audio>">Złote Przeboje</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://radiostream.pl/tuba8900-1.mp3&quot;></audio>">Złote Przeboje Białystok</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://radiostream.pl/tuba8902-1.mp3&quot;></audio>">Złote Przeboje Bydgoszcz</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://radiostream.pl/tuba8946-1.mp3&quot;></audio>">Złote Przeboje Bieszczady</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://radiostream.pl/tuba8904-1.mp3&quot;></audio>">Złote Przeboje Częstochowa</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://radiostream.pl/tuba8906-1.mp3&quot;></audio>">Złote Przeboje Gdańsk</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://radiostream.pl/tuba8908-1.mp3&quot;></audio>">Złote Przeboje Jelenia Góra</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://radiostream.pl/tuba8910-1.mp3&quot;></audio>">Złote Przeboje Katowice</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://radiostream.pl/tuba8914-1.mp3&quot;></audio>">Złote Przeboje Kraków</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://radiostream.pl/tuba8912-1.mp3&quot;></audio>">Złote Przeboje Kielce</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://radiostream.pl/tuba8916-1.mp3&quot;></audio>">Złote Przeboje Legnica</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://radiostream.pl/tuba8920-1.mp3&quot;></audio>">Złote Przeboje Lublin</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://radiostream.pl/tuba8918-1.mp3&quot;></audio>">Złote Przeboje Łódź</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://radiostream.pl/tuba8924-1.mp3&quot;></audio>">Złote Przeboje Opole</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://radiostream.pl/tuba8922-1.mp3&quot;></audio>">Złote Przeboje Podhale</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://radiostream.pl/tuba8926-1.mp3&quot;></audio>">Złote Przeboje Poznań</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://radiostream.pl/tuba8928-1.mp3&quot;></audio>">Złote Przeboje Rzeszów</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://radiostream.pl/tuba8930-1.mp3&quot;></audio>">Złote Przeboje Szczecin</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://radiostream.pl/tuba8932-1.mp3&quot;></audio>">Złote Przeboje Tarnów</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://radiostream.pl/tuba8934-1.mp3&quot;></audio>">Złote Przeboje Wałbrzych</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://radiostream.pl/tuba8936-1.mp3&quot;></audio>">Złote Przeboje Warszawa</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://radiostream.pl/tuba8938-1.mp3&quot;></audio>">Złote Przeboje Wolin</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://radiostream.pl/tuba8940-1.mp3&quot;></audio>">Złote Przeboje Wrocław</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://radiostream.pl/tuba8942-1.mp3&quot;></audio>">Złote Przeboje Zamość</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://radiostream.pl/tuba8944-1.mp3&quot;></audio>">Złote Przeboje Zielona Góra</a></li>
+   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_POGODA.mp3?dist=gra_www&quot;></audio>">Radio Pogoda</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://radiostream.pl/tuba143-1.mp3&quot;></audio>">Radio Pogoda Bydgoszcz</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://radiostream.pl/tuba145-1.mp3&quot;></audio>">Radio Pogoda Gdańsk</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://radiostream.pl/tuba144-1.mp3&quot;></audio>">Radio Pogoda Katowice</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://radiostream.pl/tuba139-1.mp3&quot;></audio>">Radio Pogoda Kraków</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://radiostream.pl/tuba141-1.mp3&quot;></audio>">Radio Pogoda Opole</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://radiostream.pl/tuba138-1.mp3&quot;></audio>">Radio Pogoda Poznań</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://radiostream.pl/tuba140-1.mp3&quot;></audio>">Radio Pogoda Warszawa</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://radiostream.pl/tuba142-1.mp3&quot;></audio>">Radio Pogoda Wrocław</a></li>
+   <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_classic&quot;></audio>">RMF Classic</a></li>
+   <li class="filterDiv internet"><a href="data:text/html,<audio controls><source src=&quot;https://pa02.cdn.eurozet.pl/pla-net.mp3&quot;></audio>">Planeta FM</a></li>
+   <li class="filterDiv ulubione polska internet"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3980-1.aac&quot;></audio>">VOX w Rytmie Hitów</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Biała Podlaska</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Białystok</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Bielsko-Biała</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Bydgoszcz</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Częstochowa</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Elbląg</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Gdańsk</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Gdynia</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3040-1.aac&quot;></audio>">VOX Gorzów Wielkopolski</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Grudziądz</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Jelenia Góra</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Kalisz</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Katowice</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Kielce</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Koszalin</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Konin</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Kraków</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Krosno</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Legnica</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Leszno</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Lublin</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Łomża</a></li>
+   <li class="filterDiv ulubione region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Łódź</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Nowy Sącz</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Olsztyn</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Opole</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Ostrołęka</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Piotrków Trybunalski</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Płock</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3140-1.aac&quot;></audio>">VOX Poznań</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Przemyśl</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3210-1.aac&quot;></audio>">VOX Radom</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Rzeszów</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Siedlce</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Suwałki</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Szczecin</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Tarnobrzeg</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Tarnów</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Toruń</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Tychy</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Wałbrzych</a></li>
+   <li class="filterDiv ulubione region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Warszawa</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Włocławek</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Wrocław</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Zamość</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/3990-1.aac&quot;></audio>">VOX Zielona Góra</a></li>
+   <li class="filterDiv ulubione region"><a href="data:text/html,<audio controls><source src=&quot;https://player.legnica.fm/listen/radio_plus_legnica/radio128.mp3&quot;></audio>">Legnica FM (Radio Plus)</a></li>
+   <li class="filterDiv internet"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/6490-1.aac&quot;></audio>">Vibe FM</a></li>
+   <li class="filterDiv polska region"><a href="data:text/html,<audio controls><source src=&quot;https://pl.cdn.eurozet.pl/plu-waw.mp3&quot;></audio>">Radio Plus Warszawa</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://pl.cdn.eurozet.pl/plu-bdg.mp3&quot;></audio>">Radio Plus Bydgoszcz</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://pl.cdn.eurozet.pl/plu-gdn.mp3&quot;></audio>">Radio Plus Gdańsk</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://pl.cdn.eurozet.pl/plu-glg.mp3&quot;></audio>">Radio Plus Głogów</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://pl.cdn.eurozet.pl/plu-gnz.mp3&quot;></audio>">Radio Plus Gniezno</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://pl.cdn.eurozet.pl/plu-grz.mp3&quot;></audio>">Radio Plus Gorzów</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/4270-1.aac&quot;></audio>">Radio Plus Koszalin</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/4070-1.aac&quot;></audio>">Radio Plus Kraków</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/4130-1.aac&quot;></audio>">Radio Plus Lublin</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/4100-1.aac&quot;></audio>">Radio Plus Łódź</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/4110-1.aac&quot;></audio>">Radio Plus Olsztyn</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/4340-1.aac&quot;></audio>">Radio Plus Podhale</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://pl.cdn.eurozet.pl/plu-rdo.mp3&quot;></audio>">Radio Plus Radom</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://waw.ic.smcdn.pl/4260-1.aac&quot;></audio>">Radio Plus Szczecin</a></li>
+   <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://pl.cdn.eurozet.pl/plu-zgr.mp3&quot;></audio>">Radio Plus Zielona Góra</a></li>
+   <li class="filterDiv internet"><a href="data:text/html,<audio controls><source src=&quot;http://4stream.pl:18322/;stream.mp3&quot;></audio>">InterStacja - Kanał Główny</a></li>
+   <li class="filterDiv internet"><a href="data:text/html,<audio controls><source src=&quot;http://4stream.pl:18274/;stream.mp3&quot;></audio>">InterStacja - Disco Polo</a></li>
+   <li class="filterDiv internet"><a href="data:text/html,<audio controls><source src=&quot;http://4stream.pl:18268/;stream.mp3&quot;></audio>">InterStacja - Club</a></li>
+   <li class="filterDiv internet"><a href="data:text/html,<audio controls><source src=&quot;http://4stream.pl:18180/;stream.mp3&quot;></audio>">InterStacja - Eurodance</a></li>
+   <li class="filterDiv internet"><a href="data:text/html,<audio controls><source src=&quot;http://4stream.pl:18410/;stream.mp3&quot;></audio>">InterStacja - Najnowsze Hity</a></li>
+   <li class="filterDiv internet"><a href="data:text/html,<audio controls><source src=&quot;http://4stream.pl:18290/;stream.mp3&quot;></audio>">InterStacja - Oldies</a></li>
+   <li class="filterDiv internet"><a href="data:text/html,<audio controls><source src=&quot;http://4stream.pl:18254/;stream.mp3&quot;></audio>">InterStacja - Polskie Hity</a></li>
+
 </ul>
 
 <script>
@@ -312,6 +377,56 @@ for (var i = 0; i < btns.length; i++) {
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });
+}
+function sortListDir() {
+  var list, i, switching, b, shouldSwitch, dir, switchcount = 0;
+  list = document.getElementById("myUL");
+  switching = true;
+  // Set the sorting direction to ascending:
+  dir = "asc";
+  // Make a loop that will continue until no switching has been done:
+  while (switching) {
+    // Start by saying: no switching is done:
+    switching = false;
+    b = list.getElementsByTagName("LI");
+    // Loop through all list-items:
+    for (i = 0; i < (b.length - 1); i++) {
+      // Start by saying there should be no switching:
+      shouldSwitch = false;
+      /* Check if the next item should switch place with the current item,
+      based on the sorting direction (asc or desc): */
+      if (dir == "asc") {
+        if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+          /* If next item is alphabetically lower than current item,
+          mark as a switch and break the loop: */
+          shouldSwitch = true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (b[i].innerHTML.toLowerCase() < b[i + 1].innerHTML.toLowerCase()) {
+          /* If next item is alphabetically higher than current item,
+          mark as a switch and break the loop: */
+          shouldSwitch= true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark that a switch has been done: */
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+      // Each time a switch is done, increase switchcount by 1:
+      switchcount ++;
+    } else {
+      /* If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again. */
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
 }
 </script>
 
