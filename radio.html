@@ -78,6 +78,7 @@
   <button class="btn" onclick="filterSelection('internet')"> Internet</button>
   <button class="btn" onclick="filterSelection('moje-radio')"> Moje radio</button>
   <button class="btn" onclick="filterSelection('muzyka')"> Muzyka</button>
+  <button onclick="sortList()">Sortuj</button>
 </div>
 
 <ul id="myUL">
@@ -207,7 +208,7 @@
    <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-trn.mp3&quot;></audio>">Meloradio Toruń</a></li>
    <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://n-11-25.dcs.redcdn.pl/sc/o2/Eurozet/live/meloradio.livx&quot;></audio>">Meloradio Warszawa</a></li>
    <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://ml01.cdn.eurozet.pl/mel-wro.mp3&quot;></audio>">Meloradio Wrocław</a></li>
-   <li class="filterDiv polska region"><a href="data:text/html,<audio controls><source src=&quot;https://playerservices.streamtheworld.com/api/livestream-redirect/CHILLI.mp3?dist=gra_www&quot;></audio>">Chillizet online Warszawa/a></li>
+   <li class="filterDiv polska region"><a href="data:text/html,<audio controls><source src=&quot;https://playerservices.streamtheworld.com/api/livestream-redirect/CHILLI.mp3?dist=gra_www&quot;></audio>">Chillizet online Warszawa</a></li>
    <li class="filterDiv polska"><a href="data:text/html,<audio controls><source src=&quot;https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_ZLOTE_PRZEBOJE.mp3?dist=gra_www&quot;></audio>">Złote Przeboje</a></li>
    <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://radiostream.pl/tuba8900-1.mp3&quot;></audio>">Złote Przeboje Białystok</a></li>
    <li class="filterDiv region"><a href="data:text/html,<audio controls><source src=&quot;https://radiostream.pl/tuba8902-1.mp3&quot;></audio>">Złote Przeboje Bydgoszcz</a></li>
@@ -378,53 +379,36 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
-function sortListDir() {
-  var list, i, switching, b, shouldSwitch, dir, switchcount = 0;
+function sortList() {
+  var list, i, switching, b, shouldSwitch;
   list = document.getElementById("myUL");
   switching = true;
-  // Set the sorting direction to ascending:
-  dir = "asc";
-  // Make a loop that will continue until no switching has been done:
+  /* Make a loop that will continue until
+  no switching has been done: */
   while (switching) {
-    // Start by saying: no switching is done:
+    // start by saying: no switching is done:
     switching = false;
     b = list.getElementsByTagName("LI");
     // Loop through all list-items:
     for (i = 0; i < (b.length - 1); i++) {
-      // Start by saying there should be no switching:
+      // start by saying there should be no switching:
       shouldSwitch = false;
-      /* Check if the next item should switch place with the current item,
-      based on the sorting direction (asc or desc): */
-      if (dir == "asc") {
-        if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
-          /* If next item is alphabetically lower than current item,
-          mark as a switch and break the loop: */
-          shouldSwitch = true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (b[i].innerHTML.toLowerCase() < b[i + 1].innerHTML.toLowerCase()) {
-          /* If next item is alphabetically higher than current item,
-          mark as a switch and break the loop: */
-          shouldSwitch= true;
-          break;
-        }
+      /* check if the next item should
+      switch place with the current item: */
+      
+      if (Number(b[i].innerHTML) > Number(b[i + 1].innerHTML)) {
+        /* if next item is numerically
+        lower than current item, mark as a switch
+        and break the loop: */
+        shouldSwitch = true;
+        break;
       }
     }
     if (shouldSwitch) {
       /* If a switch has been marked, make the switch
-      and mark that a switch has been done: */
+      and mark the switch as done: */
       b[i].parentNode.insertBefore(b[i + 1], b[i]);
       switching = true;
-      // Each time a switch is done, increase switchcount by 1:
-      switchcount ++;
-    } else {
-      /* If no switching has been done AND the direction is "asc",
-      set the direction to "desc" and run the while loop again. */
-      if (switchcount == 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
     }
   }
 }
