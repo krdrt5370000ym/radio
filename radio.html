@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-widrh,initial-scale=1.0">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" href="style.css">
+<link href="https://krdrt5370000ym.github.io/fonts/css/fontconfig.css" rel="stylesheet">
+<title>Słuchaj online: stacja radiowe, VOD, muzyki, podcasty i playlisty</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('https://www.w3schools.com/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+.filterDiv {
+  /* float: left;
+  background-color: #2196F3;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px; */
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Radio internetowe</h2>
+
+<p>Strona w trakcie przebudowy. Pracujemy nad nową wersją strony. Prosimy o cierpliwość i zapraszamy wkrótce!</p>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Szukaj.." title="Wpisz nazwę">
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Wszystkie</button>
+  <button class="btn" onclick="filterSelection('ulubione')"> Ulubione</button>
+  <button class="btn" onclick="filterSelection('polska')"> Polska</button>
+  <button class="btn" onclick="filterSelection('region')"> Region</button>
+  <button class="btn" onclick="filterSelection('zagranicy')"> Zagranicy</button>
+  <button class="btn" onclick="filterSelection('moje-radio')"> Moje radio</button>
+</div>
+
+<ul id="myUL">
+   <li class="filterDiv cars"><a href="data:text/html,<audio controls><source src=&quot;https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_ZET.mp3?dist=gra_www&quot;></audio>">Radio ZET</a></li>
+   <li class="filterDiv cars"><a href="data:text/html,<audio controls><source src=&quot;https://rs103-krk.rmfstream.pl/rmf_fm&quot;></audio>">RMF FM</a></li>
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
