@@ -106,6 +106,7 @@
       <h2>Radio internetowe</h2>
       <p>Strona w trakcie przebudowy. Pracujemy nad nową wersją strony. Prosimy o cierpliwość i zapraszamy wkrótce!</p>
       <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Szukaj.." title="Wpisz nazwę">
+      <button onclick="myFunctionShow()">Pokaż</button>
       <div id="myBtnContainer">
          <button class="btn active" onclick="filterSelection('all')"> Wszystkie</button>
          <button class="btn" onclick="filterSelection('ulubione')"> Ulubione</button>
@@ -1401,6 +1402,14 @@
             b[d].parentNode.insertBefore(b[d + 1], b[d]);
             switching = true;
           }
+        }
+      }
+      function myFunctionShow() {
+        var x = document.getElementById("myBtnContainer");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
         }
       }
       </script>
