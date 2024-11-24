@@ -2,14 +2,14 @@
 <html lang="pl">
    <head>
       <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-widrh,initial-scale=1.0">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
       <link rel="icon" type="image/png" href="favicon.png">
       <link rel="stylesheet" href="style.css">
       <link href="https://krdrt5370000ym.github.io/fonts/css/fontconfig.css" rel="stylesheet">
       <title>Słuchaj online: stacja radiowe, VOD, muzyki, podcasty i playlisty</title>
    </head>
    <body>
-      <button><a style="color: black;" href="/radio/">Wstecz</a></button><br>
+      <button class="but but1"><a style="color: black;" href="/radio/">Wstecz</a></button><br>
       <select onchange="document.getElementById('favorite').src=this.options[this.selectedIndex].value;document.getElementById('favorite').style='display:initial';" style="margin: 7px auto; width: 250px;">
          <option value="https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_ZET.mp3?dist=gra_www">[1] Radio ZET (107,5 FM - Warszawa, 92,6 FM - Łódź)</option>
          <option value="https://rs103-krk.rmfstream.pl/rmf_fm">[2] RMF FM (91 FM, 90,6 FM - Warszawa, 93,5 FM - Łódź)</option>
@@ -30,7 +30,7 @@
          <option value="https://stream.rcs.revma.com/x6bhu8a6z72vv">[9] RSC Dance</option>
          <option value="https://stream.v4.radiovictoria.pl:8076/;">[10] Radio Victoria (93,8 FM - Kutno, 94,7 FM - Rawa Maz., 96,7 - Sk-ce, 98,1 FM - Mszc., 103,5 FM - Łowicz)</option>
       </select>
-      <button onclick="document.getElementById('favorite').src='https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_ZET.mp3?dist=gra_www';document.getElementById('favorite').style='display:initial';">Włącz radio</button>
+      <button class="but but2" onclick="document.getElementById('favorite').src='https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_ZET.mp3?dist=gra_www';document.getElementById('favorite').style='display:initial';">Włącz radio</button>
       <br>
       <audio id="favorite" controls>
          <source src="">
