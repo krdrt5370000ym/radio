@@ -1,6 +1,6 @@
 body {
 	font-family: "SUSE", "Kumbh Sans", "Montserrat", "Roboto", Calibri, sans-serif;
-	color: #001017;
+	color: #130010;
 }
 
 audio {
@@ -8,7 +8,7 @@ audio {
 }
 
 a:link {
-	color: #001017;
+	color: #3A0048;
 	background-color: transparent;
 	text-decoration: none;
 }
@@ -25,6 +25,28 @@ h2 {
 
 input, button, select, audio, iframe {
 	font-family: inherit;
+}
+
+.but {
+    border: none;
+    color: white;
+    padding: 8px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+ .but1 {
+    background-color: white;
+     color: black;
+     border: 2px solid #800080;
+}
+ .but1:hover {
+    background-color: #800080;
+    color:white;
 }
 
 /* Style the tab */
