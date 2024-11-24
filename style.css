@@ -48,6 +48,17 @@ input, button, select, audio, iframe {
     background-color: #800080;
     color:white;
 }
+ .but2 {
+    background-color: white;
+     color: black;
+     padding: 2px 2px;
+     margin: 1px 1px;
+     border: 2px solid #800080;
+}
+ .but2:hover {
+    background-color: #800080;
+    color:white;
+}
 
 /* Style the tab */
 .tab {
