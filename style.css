@@ -28,34 +28,38 @@ input, button, select, audio, iframe {
 }
 
 .but {
-    border: none;
-    color: white;
-    padding: 8px 8px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
+	border: none;
+	color: white;
+	padding: 8px 8px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
 }
+
  .but1 {
-    background-color: white;
-     color: black;
-     border: 2px solid #800080;
+	background-color: white;
+	color: black;
+	border: 2px solid #800080;
 }
+
  .but1:hover {
-    background-color: #800080;
-    color:white;
+	background-color: #800080;
+	color:white;
 }
+
  .but2 {
-    background-color: white;
-     color: black;
-     padding: 2px 2px;
-     margin: 1px 1px;
-     border: 2px solid #800080;
+	background-color: white;
+	color: black;
+	padding: 2px 2px;
+	margin: 1px 1px;
+	border: 2px solid #800080;
 }
+
  .but2:hover {
-    background-color: #800080;
-    color:white;
+	background-color: #800080;
+	color:white;
 }
