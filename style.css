@@ -8,7 +8,7 @@ audio {
 }
 
 a:link {
-	color: #3A0048;
+	color: inherit;
 	background-color: transparent;
 	text-decoration: none;
 }
