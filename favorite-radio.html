@@ -8,48 +8,7 @@
       <link href="https://krdrt5370000ym.github.io/fonts/css/fontconfig.css" rel="stylesheet">
       <title>Słuchaj online: stacja radiowe, VOD, muzyki, podcasty i playlisty</title>
    </head>
-   <body id='liveh1'>
-      <select id="selecth1FontFamily" name="selectFontFamily" onchange="updateh1family();">
-         <option value="'SUSE', 'Kumbh Sans', 'Montserrat', 'Roboto', Calibri, sans-serif"> Brak czcionki </option>
-         <option value="'SUSE', Calibri, sans-serif"> Czcionki normalne 1 </option>
-         <option value="'Kumbh Sans', Calibri, sans-serif"> Czcionki normalne 2 </option>
-         <option value="'Montserrat', Calibri, sans-serif"> Czcionki normalne 3 </option>
-         <option value="'Open Sans', Calibri, sans-serif"> Czcionki normalne 4 </option>
-         <option value="'Roboto', Calibri, sans-serif"> Czcionki normalne 5 </option>
-         <option value="'Poppins', Calibri, sans-serif"> Czcionki normalne 6 </option>
-         <option value="'Roboto Slab', Calibri, sans-serif"> Czcionki normalne 7 </option>
-         <option value="'Lato', Calibri, sans-serif"> Czcionki normalne 8 </option>
-         <option value="'Dosis', Calibri, sans-serif"> Czcionki normalne 9 </option>
-         <option value="'PT Sans', Calibri, sans-serif"> Czcionki normalne 10 </option>
-         <option value="'Fira Sans', Calibri, sans-serif"> Czcionki normalne 11 </option>
-         <option value="'Saira Condensed', Calibri, sans-serif"> Czcionki normalne 12 </option>
-         <option value="'Aptos Narrow', Calibri, sans-serif"> Czcionki normalne 13 </option>
-         <option value="'Arial', Calibri, sans-serif"> Czcionki normalne 14 </option>
-         <option value="'Calibri', sans-serif"> Czcionki normalne 15 </option>
-         <option value="'DIN Pro', Calibri, sans-serif"> Czcionki normalne 16 </option>
-         <option value="'Noto Serif', Calibri, sans-serif"> Czcionki klasyczne 1 </option>
-         <option value="'Georgia', Calibri, sans-serif"> Czcionki klasyczne 2 </option>
-         <option value="'Times New Roman', Times, Calibri, sans-serif"> Czcionki klasyczne 3 </option>
-         <option value="'Press Start 2P', Calibri, sans-serif"> Czcionki retro 1 </option>
-         <option value="'VT323', Calibri, sans-serif"> Czcionki retro 2 </option>
-         <option value="'Pixel Grid Circle S', Calibri, sans-serif"> Czcionki retro 3 </option>
-         <option value="'Droid Sans Mono', Calibri, sans-serif"> Czcionki retro 4 </option>
-         <option value="'Courier New', Calibri, sans-serif"> Czcionki retro 5 </option>
-         <option value="'Playpen Sans', Calibri, sans-serif"> Czcionki dziecięce 1 </option>
-         <option value="'Playwrite GB S', Calibri, sans-serif"> Czcionki dziecięce 2 </option>
-         <option value="'LXGW WenKai Mono TC', Calibri, sans-serif"> Czcionki dziecięce 3 </option>
-         <option value="'Comic Sans MS', Calibri, sans-serif"> Czcionki dziecięce 4 </option>
-         <option value="'Elementarz Pro', Calibri, sans-serif"> Czcionki dziecięce 5 </option>
-         <option value="'Quicksand', Calibri, sans-serif"> Czcionki dziecięce 6 </option>
-      </select>
-      <script>
-         function updateh1family() {
-         var selector = document.getElementById('selecth1FontFamily');
-         var family = selector.options[selector.selectedIndex].value;
-         var h1 = document.getElementById('liveh1')
-         h1.style.fontFamily = family;        
-         }
-      </script><br>
+   <body>
       <button><a style="color: black;" href="/radio/">Wstecz</a></button><br>
       <select onchange="document.getElementById('favorite').src=this.options[this.selectedIndex].value;document.getElementById('favorite').style='display:initial';" style="margin: 7px auto; width: 250px;">
          <option value="https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_ZET.mp3?dist=gra_www">[1] Radio ZET (107,5 FM - Warszawa, 92,6 FM - Łódź)</option>
